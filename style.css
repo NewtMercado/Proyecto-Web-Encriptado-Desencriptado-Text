@@ -1,0 +1,194 @@
+/* Estilos para el cuerpo del documento */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    max-width: 400px;
+    width: 100%;
+    padding: 24px;
+    margin: 2%;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+/* Estilos para el encabezado */
+.header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.header h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Estilos para el título principal */
+.h1 {
+    color: blue;
+    font-family: 'Inter', sans-serif;
+    font-size: 45px;
+    font-weight: 900;
+}
+
+/* Estilos para el subtítulo */
+.h3 {
+    color: darkblue;
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+}
+
+/* Estilos para el nombre del desarrollador */
+.s1 {
+  color: darkblue;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Estilos para el párrafo en el encabezado */
+.header p {
+    color: #6c757d;
+    margin: 4px 0 0;
+}
+
+/* Estilos para los grupos de formularios */
+.form-group {
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Estilos para el grupo de salida de texto */
+.output-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.output-group p {
+    margin: 0;
+    color: #6c757d;
+}
+
+/* Estilos para el botón de copiar */
+.copy-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    color: #adb5bd;
+}
+
+.copy-button:hover {
+    color: #495057;
+}
+
+.clipboard-icon {
+    width: 16px;
+    height: 16px;
+}
+
+/* Estilos para el grupo de botones */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-group .encrypt-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-group .decrypt-button {
+    background-color: #6c757d;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.button-group .decrypt-button.habilitado {
+    background-color: #007bff; /* Cambia el color de fondo a verde */
+    color: #fff; /* Cambia el color del texto a blanco */
+}
+
+
+
+/* Estilos para el pie de página */
+.footer {
+    position: fixed;
+    align-self: flex-end;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 35px;
+    background-color: blue;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 613px) {
+    .h1 {
+        font-size: 1.5rem;
+    }
+    .h3 .header {
+        font-size: 1rem;
+    }
+    .footer {
+        position: fixed;
+        align-self: flex-end;
+    }
+}
+
+@media (max-width: 460px) {
+    .h1 {
+        font-size: 1.5rem;
+    }
+    .h3 .header {
+        font-size: 0.5rem;
+    }
+    .container {
+        max-width: 300px;
+        width: 90%;
+        padding: 14px;
+        margin: 1%;
+    }
+    .footer {
+        position: fixed;
+        align-self: flex-end;
+        font-size: smaller;
+    }
+}

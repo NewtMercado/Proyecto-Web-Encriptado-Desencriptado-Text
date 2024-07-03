@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🔐 Encriptador de Textos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="image.png" alt="logo">
+  </header>
+  <h1 class="h1">🔐Encriptador de Textos</h1>
+  <h3 class="h3">Encripta y desencripta mensajes</h3>
+  <div class="container">
+    <div class="content">
+      <div class="header">
+        <h3>Encryptor</h3>
+      </div>
+      <div class="form-group">
+        <label for="encrypt-input">Enter message to encrypt</label>
+        <input id="encrypt-input" type="text" placeholder="Escribe tu mensaje aqui...">
+      </div>
+      <div class="form-group">
+        <label for="decrypt-output">Decrypted message</label>
+        <div class="output-group">
+          <p id="decrypt-output">No se ha encontrado texto...</p>
+          <button onclick="copiar();" class="copy-button" aria-label="Copy">
+            <svg class="clipboard-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect>
+              <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <p class="alerta__tipo__texto">⚠️Solo letras minúsculas y sin acentos</p>
+      <div class="button-group">
+        <button onclick="Encripta();" class="encrypt-button">Encrypt</button>
+        <button onclick="Desencripta();" class="decrypt-button" id="desencriptar" disabled>Decrypt</button>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+  <footer class="footer">
+    <p>@Desarrollado con pasión❤️ por <strong class="s1">Newton Mercado Chamorro</strong></p>
+  </footer>
+</body>
+</html>
